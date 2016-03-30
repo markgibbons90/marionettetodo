@@ -1,0 +1,16 @@
+{
+  "name": "marionettetodo",
+  "version": "0.0.0",
+  "description": "A to-do application built with Backbone.Marionette",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Gibbons",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "backbone.marionette": "~2.4.5",
+    "jquery": "~1.12.2",
+    "bootstrap": "~3.3.6"
+  }
+}
