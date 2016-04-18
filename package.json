@@ -4,13 +4,18 @@
   "description": "A to-do application built with Backbone.Marionette",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -rw css -o css"
   },
   "author": "Mark Gibbons",
   "license": "BSD-2-Clause",
   "dependencies": {
     "backbone.marionette": "~2.4.5",
     "jquery": "~1.12.2",
-    "bootstrap-sass": "~3.3.6"
+    "bootstrap-sass": "~3.3.6",
+    "handlebars": "~4.0.5"
+  },
+  "devDependencies": {
+    "node-sass": "~3.4.2"
   }
 }
