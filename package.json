@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -rw css -o css"
+    "build-scss": "node-sass -r css -o css",
+    "watch-scss": "node-sass -rw css -o css",
+    "hbs": "handlebars js/templates/*.hbs -f js/templates/compiled/compiled.js"
   },
   "author": "Mark Gibbons",
   "license": "BSD-2-Clause",
