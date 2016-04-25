@@ -20,7 +20,8 @@
     border: none;
     box-shadow: none;
     -webkit-box-shadow: none;
-    &:focus {
+    transition: background 0.2s ease-in;
+    &:focus, &:hover {
         background: rgba(255, 255, 255, 0.1);
     }
 }
