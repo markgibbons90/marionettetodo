@@ -7,24 +7,10 @@
 </head>
 <body>
     <div id="nav-region"></div>
-    <div id="todo-list-region"></div>
-    <div id="completed-list-region"></div>
-    <!-- <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <h1>
-                        @TODO
-                    </h1>
-                </a>
-            </div>
-            <form class="navbar-form navbar-left">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="list-title" placeholder="Untitled List" autocomplete="off">
-                </div>
-            </form>
-        </div>
-    </nav> -->
+    <div class="container narrow-container">
+        <div id="task-list-region"></div>
+        <div id="completed-list-region"></div>
+    </div>
 
     <!-- Vendor -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -37,6 +23,8 @@
     <!-- App -->
     <script src="js/templates/compiled/compiled.js"></script>
     <script src="js/views/nav.js"></script>
+    <script src="js/views/task.js"></script>
+    <script src="js/views/taskList.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

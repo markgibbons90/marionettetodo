@@ -8,8 +8,8 @@ app.on('start', function() {
         el: 'body',
         regions: {
             'nav': '#nav-region',
-            'todo': '#todo-region',
-            'completed': '#completed-region'
+            'todo': '#task-list-region',
+            'completed': '#completed-list-region'
         },
         initialize: function() {
 
@@ -17,6 +17,7 @@ app.on('start', function() {
 
         onRender: function() {
             this.showChildView('nav', new NavView());
+            this.showChildView('todo', new TaskListView());
         }
     });
 
