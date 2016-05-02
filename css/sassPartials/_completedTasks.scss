@@ -1,0 +1,28 @@
+.task.task-completed {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.task-completed-title {
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+
+.task-completed-star {
+    cursor: default;
+    color: #bbb;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    position: absolute;
+    left: 36px;
+    top: 9px;
+}
+
+.task-completed-star.task-star-selected {
+    color: #EFC211;
+    &:hover {
+        color: #EFC211, 10%;
+    }
+}

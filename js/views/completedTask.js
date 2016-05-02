@@ -1,26 +1,7 @@
 var TaskView = Marionette.ItemView.extend({
 
-    template: Handlebars.templates.task,
-    className: 'task',
-    ui: {
-        titleInput: 'input[type="text"]',
-        starTask: '[data-action="star-task"]',
-        checkTask: '[data-action="check-task"]',
-        taskChecked: '[data-ui="task-checked"]'
-    },
-    events: {
-        'keydown @ui.titleInput': 'onKeyDownInput',
-        'blur @ui.titleInput': 'render',
-        'click @ui.starTask': 'toggleStarred',
-        'click @ui.checkTask': 'markTaskComplete'
-    },
-    modelEvents: {
-        change: 'render'
-    },
-
-    initialize: function() {
-        // console.log(this.model.toJSON());
-    },
+    template: Handlebars.templates.completedTask,
+    className: 'task task-completed',
 
     /**
      * When you hit enter in the text input, save the model title

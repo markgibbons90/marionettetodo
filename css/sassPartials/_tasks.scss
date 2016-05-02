@@ -4,8 +4,9 @@
 
 .task {
     background: #fff;
-    padding: 6px 12px;
+    padding: 6px 40px 6px 64px;
     margin-bottom: 2px;
+    position: relative;
     &:first-child {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
@@ -13,11 +14,13 @@
     &:last-child {
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
+        margin-bottom: 1em;
     }
 }
 
 .task-edit-title {
     display: inline-block;
+    width: 100%;
     border: none;
     background: transparent;
     padding: 4px 6px;
@@ -35,6 +38,9 @@
     border: none;
     background: transparent;
     padding: 0;
+    position: absolute;
+    left: 36px;
+    top: 9px;
     &:hover {
         color: #EFC211;
     }
@@ -48,17 +54,41 @@
     }
 }
 
-.task-check {
-    width: 15px;
-    height: 15px;
-}
 .task-unchecked {
+    width: 14px;
+    height: 14px;
     background: #bbb;
     border: none;
-    border-radius: 3px;;
+    border-radius: 3px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    &:hover {
+        background: #aaa;
+    }
+    transition: background 0.15s linear;
 }
 .task-checked {
     color: #1A9C28;
     font-size: 20px;
     font-weight: bold;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+
+.task-delete {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    color: #bbb;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+    &:hover {
+        color: #aaa;
+    }
+    transition: color 0.15s linear;
 }

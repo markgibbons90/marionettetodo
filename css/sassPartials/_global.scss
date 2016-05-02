@@ -1,7 +1,24 @@
 body {
-    background: #e1e1e1;
+    background: url('../img/desk-min.jpg') #e1e1e1;
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.body-background-mask {
+    height: 100%;
+    background: rgba(50, 50, 50, 0.4);
 }
 
 .narrow-container {
     max-width: 600px;
+}
+
+.btn.btn-primary {
+    background: #009A8F;
+    font-weight: bold;
+    border: none;
+    &:focus, &:hover, &:active {
+        background: darken(#009A8F, 3%);
+    }
+    transition: background 0.15s linear;
 }
