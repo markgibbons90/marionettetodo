@@ -14,7 +14,7 @@ var TaskListView = Marionette.CompositeView.extend({
 
     initialize: function() {
         this.collection = new TaskList();
-        this.listenTo(app.vent, 'task:completed', this.onTaskCompleted)
+        this.listenTo(app.vent, 'task:completed', this.onTaskCompleted);
     },
 
     /**

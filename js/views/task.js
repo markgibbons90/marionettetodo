@@ -41,13 +41,14 @@ var TaskView = Marionette.ItemView.extend({
     },
 
     markTaskComplete: function() {
-        // Animate checking the task
+        // Animate checking the task and fading it out
         this.animateTaskChecked();
+        this.$el.fadeOut(300);
         // Remove the task from this collection after a short delay for the animation.
         var _this = this;
         setTimeout(function() {
             app.vent.trigger('task:completed', _this.model);
-        }, 150);
+        }, 300);
     },
 
     animateTaskChecked: function() {

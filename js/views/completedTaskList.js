@@ -28,7 +28,15 @@ var CompletedTaskListView = Marionette.CompositeView.extend({
     onToggleViewTasks: function(e) {
         e.preventDefault();
         this.model.set('displayTaskList', !this.model.get('displayTaskList'));
-        this.render();
+        if (this.model.get('displayTaskList')) {
+            $(this.childViewContainer).fadeIn(300);
+        } else {
+            $(this.childViewContainer).fadeOut(300);
+        }
+        var _this = this;
+        setTimeout(function() {
+            _this.render();
+        }, 300);
     }
 
 });
